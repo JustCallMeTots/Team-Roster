@@ -14,6 +14,7 @@ function Home() {
       }}
     >
       <h1>Hello {user.displayName}! </h1>
+      <h2>Welcome to the Karasuno Highschool Vollyball team roster</h2>
     </div>
   );
 }
