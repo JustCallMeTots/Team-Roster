@@ -39,7 +39,7 @@ function PlayerForms({ obj }) {
     } else {
       const payload = { ...formInput, uid: user.uid };
       createPlayers(payload).then(() => {
-        router.push('/');
+        router.push('/team');
       });
     }
   };
