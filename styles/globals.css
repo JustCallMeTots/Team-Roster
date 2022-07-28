@@ -18,5 +18,31 @@ a {
 }
 
 body {
-  background-color: #88effd;
+  /* background-color: grey; */
+  background-image: linear-gradient(#ED8C37, #282D3A);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #EDF4F4;
 }
+
+.ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;         /* Turns a square into a circle   */
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdLLxktqCrvGtbxqW6IWN7TKRs3UyiEc0DdKgWvaFVyjGWLFwUsmhdvxC63oqI1O3jEDE&usqp=CAU);
+  background-size: contain;  
+  animation: bounce 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, 200px, 0); }
+}
+
+.mb-3 {
+  color: #282D3A;
+}
+

@@ -13,15 +13,18 @@ function PlayerCard({ playerObj, onUpdate }) {
   };
 
   return (
-    <Card style={{ width: '18rem', margin: '10px' }}>
-      <Card.Img variant="top" src={playerObj.playerImage} alt={playerObj.playerName} style={{ height: '400px' }} />
+    <Card style={{
+      width: '18rem', margin: '10px', backgroundColor: '#282D3A', display: 'flex', flexWrap: 'wrap',
+    }}
+    >
+      <Card.Img variant="top" src={playerObj.playerImage} alt={playerObj.playerName} style={{ height: '400px', display: 'flex', flexWrap: 'wrap' }} />
       <Card.Body>
         <Card.Title>{playerObj.playerName}</Card.Title>
         <p className="card-text bold">{playerObj.captian && <span>🏐<br /></span> }  {playerObj.position}</p>
         <Link href={`/edit/${playerObj.firebaseKey}`} passHref>
-          <Button variant="info">EDIT</Button>
+          <Button style={{ backgroundColor: '#3D9C5D' }}>EDIT</Button>
         </Link>
-        <Button variant="danger" onClick={deleteThisPlayer} className="m-2">
+        <Button style={{ backgroundColor: '#54C3EC' }} onClick={deleteThisPlayer} className="m-2">
           DELETE
         </Button>
       </Card.Body>
