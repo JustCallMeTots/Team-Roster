@@ -16,6 +16,7 @@ export default function Players() {
 
   useEffect(() => {
     getAllPlayers();
+    document.title = 'Team Page';
   }, []);
   return (
     <div className="text-center my-4">
