@@ -14,7 +14,7 @@ function Signin() {
       }}
     >
       <h1>Hi there!</h1>
-      <p> 飛べ</p>
+      <h2> 飛べ</h2>
       <Button type="button" size="lg" className="copy-btn" onClick={signIn}>
         Sign In
       </Button>
